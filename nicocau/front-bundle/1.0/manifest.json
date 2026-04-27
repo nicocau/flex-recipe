@@ -1,0 +1,41 @@
+{
+    "bundles": {
+        "NicoCau\\FrontBundle\\FrontBundle": ["all"]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/",
+        "assets/controllers.json": "assets/controllers.json"
+    },
+    "post-install-output": [
+        "",
+        "  <bg=green;fg=white>                                                          </>",
+        "  <bg=green;fg=white>   FrontBundle installé avec succès !                     </>",
+        "  <bg=green;fg=white>                                                          </>",
+        "",
+        "  <info>Fichiers copiés :</info>",
+        "    • config/packages/front.yaml",
+        "    • config/packages/knp_paginator.yaml",
+        "    • assets/controllers.json  (contrôleurs Stimulus enregistrés)",
+        "",
+        "  <info>Étapes suivantes :</info>",
+        "",
+        "  <comment>1. Importez les styles dans assets/styles/app.scss :</comment>",
+        "     @use \"styles/front-bundle\" as *;",
+        "",
+        "  <comment>2. Étendez le layout dans vos templates :</comment>",
+        "     {% extends \"@FrontBundle/layout.html.twig\" %}",
+        "",
+        "  <comment>3. Installez Bootstrap (SCSS requis) et videz le cache :</comment>",
+        "     npm install bootstrap",
+        "     php bin/console cache:clear",
+        "     php bin/console assets:install",
+        "",
+        "  <comment>4. (Optionnel) TomSelect :</comment>",
+        "     php bin/console importmap:require tom-select",
+        "     Activez dans assets/controllers.json : tomselect → enabled: true",
+        "     Importez le SCSS : @use \"tomselect\";",
+        "",
+        "  <info>Documentation :</info> https://github.com/nicolas-cauchois/front-bundle",
+        ""
+    ]
+}

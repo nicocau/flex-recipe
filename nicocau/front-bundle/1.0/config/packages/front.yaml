@@ -1,0 +1,58 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# FrontBundle – configuration
+# ──────────────────────────────────────────────────────────────────────────────
+# Toutes les valeurs ci-dessous sont des défauts ; commentez / supprimez
+# les clés que vous ne souhaitez pas surcharger.
+# ──────────────────────────────────────────────────────────────────────────────
+
+front:
+
+    # Nom de l'application – affiché dans <title> et dans la marque de la navbar
+    site_name: 'Mon Application'
+
+    # ── Marque (navbar) ──────────────────────────────────────────────────────
+    brand:
+        url: /
+
+        # Icône Iconify affichée à côté du nom (ex: "bi:box", "mdi:home")
+        icon: null
+
+        # URL / chemin d'un logo image (remplace ou complète l'icône)
+        logo: null
+
+    # ── Thème global ─────────────────────────────────────────────────────────
+    # light → pas de classe sur <body>
+    # dark  → ajoute la classe "theme-dark" sur <body>
+    theme: light
+
+    # ── Navbar ───────────────────────────────────────────────────────────────
+    navbar:
+        # Colle la navbar en haut du viewport (sticky)
+        fixed: true
+
+    # ── Sidebar ──────────────────────────────────────────────────────────────
+    sidebar:
+        # Replié par défaut (peut être surchargé par localStorage)
+        collapsed: false
+
+        # Fixe la hauteur de la sidebar à la hauteur du viewport
+        fixed: true
+
+        # Affiche la version du projet (lue depuis composer.json) en bas du menu
+        # La version n'est affichée que si le champ "version" est présent dans composer.json
+        show_version: true
+
+    # ── Footer ───────────────────────────────────────────────────────────────
+    footer:
+        show: true
+
+        # Texte de copyright — null = "© <ANNÉE>" généré automatiquement
+        copyright: null
+
+        # Version de l'application affichée dans le footer (ex: "2.1.0")
+        version: null
+
+    # ── Layout ───────────────────────────────────────────────────────────────
+    layout:
+        # true → contraint la mise en page à max-width: 1400 px
+        boxed: false

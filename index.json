@@ -1,0 +1,7 @@
+{
+    "recipes": {
+        "nicocau/front-bundle": ["1.0"]
+    },
+    "branch": "main",
+    "is_contrib": true
+}

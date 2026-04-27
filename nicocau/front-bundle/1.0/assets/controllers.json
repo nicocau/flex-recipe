@@ -1,0 +1,33 @@
+{
+    "controllers": {
+        "@nicocau/front-bundle": {
+            "accessibility": {
+                "enabled": true,
+                "fetch": "eager"
+            },
+            "layout": {
+                "enabled": true,
+                "fetch": "eager"
+            },
+            "inputmask": {
+                "enabled": true,
+                "fetch": "eager"
+            },
+            "datepicker": {
+                "enabled": true,
+                "fetch": "eager",
+                "autoimport": {
+                    "@nicocau/front-bundle/styles/datepicker": true
+                }
+            },
+            "tomselect": {
+                "enabled": false,
+                "fetch": "lazy",
+                "autoimport": {
+                    "@nicocau/front-bundle/styles/tomselect": false
+                }
+            }
+        }
+    },
+    "entrypoints": []
+}

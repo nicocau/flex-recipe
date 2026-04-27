@@ -1,0 +1,23 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# KnpPaginatorBundle – templates Bootstrap 5
+# Configuré par la recipe FrontBundle pour utiliser le thème Bootstrap 5.
+# ──────────────────────────────────────────────────────────────────────────────
+
+knp_paginator:
+
+    # Nombre de pages affichées de chaque côté de la page courante
+    page_range: 5
+
+    default_options:
+        page_name:           page
+        sort_field_name:     sort
+        sort_direction_name: direction
+        distinct:            true
+        filter_field_name:   filterField
+        filter_value_name:   filterValue
+
+    template:
+        # Bootstrap 5 — compatible avec le composant Front:DataTable
+        pagination: '@KnpPaginator/Pagination/bootstrap_v5_pagination.html.twig'
+        sortable:   '@KnpPaginator/Pagination/bootstrap_v5_sortable_link.html.twig'
+        filtration: '@KnpPaginator/Pagination/bootstrap_v5_filtration.html.twig'

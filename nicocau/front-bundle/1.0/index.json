@@ -1,0 +1,8 @@
+{
+    "manifest": "manifest.json",
+    "files": [
+        "config/packages/front.yaml",
+        "config/packages/knp_paginator.yaml",
+        "assets/controllers.json"
+    ]
+}
