@@ -49,7 +49,7 @@ front:
         # Texte de copyright — null = "© <ANNÉE>" généré automatiquement
         copyright: null
 
-        # Version de l'application affichée dans le footer (ex: "2.1.0")
+        # Version de l'application affichée dans le footer (ex: "2.1.0.0")
         version: null
 
     # ── Layout ───────────────────────────────────────────────────────────────
